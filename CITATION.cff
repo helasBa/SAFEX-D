@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this code or the data, please cite the dataset and the paper."
+title: "SAFEX-D: code for a simulated urban air mobility corpus for conflict forecasting"
+type: software
+version: "1.0.0"
+authors:
+  - family-names: "Ben Amor"
+    given-names: "Hela"
+    affiliation: "ENETCOM-SFAX,TUNISIA"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23350136
+    description: "SAFEX-D dataset (Zenodo)"
+repository-code: "https://github.com/helasBa/safex-d"
+license: "[MIT or Apache-2.0]"

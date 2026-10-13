@@ -1,0 +1,7 @@
+# Environment used to generate the episodes (virtual environment, Python 3.13)
+bluesky-simulator==1.1.1
+bluesky-navdata==1.0.0
+openap==2.6.2
+numpy==2.5.4
+pandas==3.0.6
+pyarrow==26.0.0

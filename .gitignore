@@ -1,0 +1,12 @@
+bsenv/
+__pycache__/
+*.pyc
+*.parquet
+*.tar
+*.zip
+safex2_data/
+safex2_feats/
+safex2_link/
+*.tmp
+.env
+pilot/
