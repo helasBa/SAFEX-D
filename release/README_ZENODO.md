@@ -1,4 +1,4 @@
-# SAFEX-D: simulated urban air mobility traffic with conflict labels, degraded reports and paired ASAS on/off runs
+# SAFEX-D: A Paired, Annotated Dataset for Conflict Forecasting in Dense Urban Air Mobility under Degraded Surveillance
 
 **Version 1.0.0 (first public release).** 984 one-hour episodes (3 zones, 22 classes, 2 modes), 439,079,744 records at 1 Hz, average 126 and peak 514 concurrent aircraft. Simulation with BlueSky/OpenAP; wind for the weather episodes comes from real ERA5 hourly data. No real flight tracks are included.
 
