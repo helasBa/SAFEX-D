@@ -1,9 +1,8 @@
 # SAFEX-D: code (version 1.0.0)
 
-Generators, verification and analysis scripts for **SAFEX-D**, a simulated urban air mobility traffic corpus for conflict forecasting with paired true and reported state.
+Generators, verification and analysis scripts for **SAFEX-D**, a simulated urban air mobility traffic corpus for conflict prediction with paired true and reported state.
 
-- **Data:** https://doi.org/10.5281/zenodo.23350136 (984 episodes, 439,079,744 records, CC BY 4.0). The data are what you need to reproduce the paper's results: runs with automatic resolution (mode `mvp`) are reproducible statistically, not bit by bit.
-- **Paper:** [citation to add after acceptance].
+- **Data:** https://doi.org/10.5281/zenodo.23350136 (984 episodes, 437 642 721 records, CC BY 4.0). The data are what you need to reproduce the paper's results: runs with automatic resolution (mode `mvp`) are reproducible statistically, not bit by bit.
 
 The `safex2` prefix in script and data file names is the internal name of the generator code, not a version number. This is the first public release (v1.0.0).
 
