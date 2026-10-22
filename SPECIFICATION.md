@@ -1,6 +1,6 @@
 # SAFEX-D (version 1.0.0): specification and run instructions
 
-Data: https://doi.org/10.5281/zenodo.23350136. The `safex2` prefix in script names is the internal name of the generator code, not a dataset version.
+Data: https://doi.org/10.5281/zenodo.23350136.
 
 ## Design principles
 * Ground truth is computed **inside the simulator at 5 Hz** from true positions and logged at 1 Hz as `severity` / `severity_half`; forecasting inputs never contain label-derived quantities.
@@ -17,13 +17,6 @@ Data: https://doi.org/10.5281/zenodo.23350136. The `safex2` prefix in script nam
 * 6 degradation: GNSS-L1, GNSS-L2, GNSS-LOSS, COMM-PARTIAL, COMM-FULL, SENSOR-FAULT.
 * Episode = 3600 s logged after a 600 s warm-up; event at t = 1800 s.
 * Event episodes share `traffic_key = zone-density-idx` with `NOM-zone-density` of the same idx → exact paired design.
-
-## Declared assumptions (must appear in the paper)
-* Fleet mix sUAS/eVTOL: A 97/3, B 70/30, C 99/1. eVTOL parameters (EH216: MTOW 600 kg, 16×15 kW; AAVM: MTOW 1800 kg) are approximate/illustrative.
-* Vertiports: 12 per zone, gravity OD model; minimum departure gap 20 s per vertiport.
-* Communication outages are applied to the reported-state layer; their effect on onboard ASAS is **not** modelled.
-* Severity thresholds: LoWC 496.8 m, NMAC 152.4 m, MAC 10 m, vertical 30.48 m (`paper`); half-scale profile for sensitivity (`half`).
-* With the `paper` thresholds the LoWC share is high in dense zones (≈49 % of rows have severity ≥ 1 in a BUSY free run); report both profiles and do not claim realism of the base rate.
 
 ## Run (Windows, from a terminal)
 ```
