@@ -7,8 +7,8 @@ Format follows "Datasheets for Datasets" (Gebru et al.). Fields in [brackets] ar
 - **Created by.** [authors, affiliation]. **Funding.** [funding statement].
 
 ## Composition
-- 984 one-hour episodes (3600 s logged after a 600 s warm-up), 439,079,744 records at 1 Hz, three urban zones (A, B, C), 22 scenario classes, two modes per scenario: `free` (automatic resolution off) and `mvp` (MVP resolution on). Episodes sharing a traffic key use the same generated traffic.
-- Nominal 360 episodes (180 per mode), contingency 336 (7 classes), degradation 288 (6 classes). Average 126 and peak 514 concurrent aircraft.
+- 984 one-hour episodes (3600 s logged after a 600 s warm-up), 437 642 721 records at 1 Hz, three urban zones (A, B, C), 22 scenario classes, two modes per scenario: `free` (automatic resolution off) and `mvp` (MVP resolution on). Episodes sharing a traffic key use the same generated traffic.
+- Nominal 360 episodes (180 per mode), contingency 336 (7 classes), degradation 288 (6 classes). Average 126 and peak 485 concurrent aircraft.
 - Each record: true state, reported state (GNSS noise, outages, bias), phase and failure flags, pairwise separation, conflict severity under two threshold profiles (`paper`, `half`), distance to the nearest vertiport, wind. Pairwise conflict intervals and per-episode metadata are stored next to each episode.
 - No personal data. No real flight tracks. Wind for the weather episodes is real ERA5 hourly data (Open-Meteo archive API).
 - `metadata/splits.csv` gives the 5 grouped folds (180 traffic groups) used for all reported results.

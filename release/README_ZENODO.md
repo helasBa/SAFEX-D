@@ -1,6 +1,6 @@
 # SAFEX-D: A Paired, Annotated Dataset for Conflict Forecasting in Dense Urban Air Mobility under Degraded Surveillance
 
-**Version 1.0.0 (first public release).** 984 one-hour episodes (3 zones, 22 classes, 2 modes), 439,079,744 records at 1 Hz, average 126 and peak 514 concurrent aircraft. Simulation with BlueSky/OpenAP; wind for the weather episodes comes from real ERA5 hourly data. No real flight tracks are included.
+**Version 1.0.0 (first public release).** 984 one-hour episodes (3 zones, 22 classes, 2 modes), 437 642 721 records at 1 Hz, average 126 and peak 485 concurrent aircraft. Simulation with BlueSky/OpenAP; wind for the weather episodes comes from real ERA5 hourly data. No real flight tracks are included.
 
 ## Contents of this record
 
@@ -29,9 +29,6 @@ Labels are computed inside the simulator at 5 Hz from the true positions and log
 import pandas as pd
 d = pd.read_parquet("NOM-A-BUSY_free_0001.parquet")
 ```
-
-## Known limits
-Simulation only; eVTOL performance parameters are approximate. Outages affect the reported-state layer, not the onboard ASAS. ASAS-on runs are reproducible statistically, which is why the data are published. Severity thresholds: LoWC 496.8 m, NMAC 152.4 m, MAC 10 m, vertical 30.48 m; with them the LoWC share is high in dense zones, so the base rate should not be read as realistic.
 
 ## Licence and citation
 Data: CC BY 4.0. Code: see the GitHub repository (linked in this record). Cite the DOI of this record and the paper.
